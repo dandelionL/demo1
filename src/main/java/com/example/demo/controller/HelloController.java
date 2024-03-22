@@ -12,8 +12,14 @@ public class HelloController {
     Logger logger = LoggerFactory.getLogger(getClass());
 
     @RequestMapping("/visitWeb")
-    public @ResponseBody  String visitWeb(){
+    public @ResponseBody String visitWeb() {
         logger.info("hello visitWeb!!!");
         return "hello visitWeb";
     }
+
+    @RequestMapping("/visitWeb2")
+    public @ResponseBody String visitWeb2(){
+        return "hello visitWeb2";
+    }
+
 }
